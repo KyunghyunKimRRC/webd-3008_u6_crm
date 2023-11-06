@@ -20,7 +20,7 @@ ActiveAdmin.register Customer do
     f.inputs
 
     f.inputs do
-      f.input :image, as: :file, hint: f.object.image.present? ? image_tag(f.object.image) : ''
+      f.input :image, as: :file, hint: f.object.image.present? ? image_tag(f.object.image, size: '100x100') : ''
     end
     f.actions
   end
